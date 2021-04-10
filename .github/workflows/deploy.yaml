@@ -17,3 +17,4 @@ jobs:
           export_default_credentials: true
       - run: |
           gcloud compute ssh ${{ secrets.GCP_SA_NAME }}@gce-test --zone=${{ secrets.GCP_PROJECT_ZONE }} --command="hogehoge"
+          
