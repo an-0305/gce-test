@@ -1,0 +1,1 @@
+docker pull us.gcr.io/formidable-byte-304312/nuxt-sample@latest
