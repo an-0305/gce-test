@@ -16,7 +16,4 @@ jobs:
           service_account_key: ${{ secrets.GCP_SA_KEY }}
           export_default_credentials: true
       - run: |
-          gcloud compute ssh  sa_103038029050216377672@gce-test --zone=us-west1-a --command="pwd"
-
-
-         # gcloud compute ssh  sa_103038029050216377672@gce-test --zone=us-west1-a --command="'bash -s' < start.sh"
+          gcloud compute ssh  sa_103038029050216377672@gce-test --zone=us-west1-a --command="'bash -s' < start.sh"
