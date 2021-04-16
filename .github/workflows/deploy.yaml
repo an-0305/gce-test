@@ -15,5 +15,7 @@ jobs:
           project_id: ${{ secrets.GCP_PROJECT_ID }}
           service_account_key: ${{ secrets.GCP_SA_KEY }}
           export_default_credentials: true
+       - run: |-
+          gcloud --quiet auth configure-docker
       - run: |
           gcloud compute ssh  sa_103038029050216377672@gce-test --zone=us-west1-a --command="sh < start.sh"
